@@ -32,5 +32,11 @@ void drawSplash()
 {
   lcdClear();
   lcdDraw1bitBitmap(0, 0, splash_lbm, 0, 0);
+  
+  // Add CrawlerTXc text overlay
+  lcdDrawText(LCD_W/2, 30, "CrawlerTXc", CENTERED);
+  lcdDrawText(LCD_W/2, 42, "v1.0", CENTERED | SMLSIZE);
+  lcdDrawText(LCD_W/2, 54, "Built with Claude", CENTERED | SMLSIZE);
+  
   lcdRefresh();
 }
